@@ -50,58 +50,77 @@ export default function TestForm() {
 
   return (
     <form onSubmit={handleSubmit} style={{ width: "65%" }}>
-      <label style={{ fontFamily: "Raleway", fontSize: 18 }}>First Name:</label>
-      <input
-        type="text"
-        name="firstName"
-        value={formData.firstName}
-        onChange={handleChange}
-      />
+      <div style={{ marginTop: "auto", marginBottom: "auto" }}>
+        <label
+          style={{
+            fontFamily: "Raleway",
+            fontSize: 18,
+            display: "block",
+            marginTop: "25px",
+          }}>
+          First Name:
+        </label>
+        <input
+          style={{ marginBottom: "25px" }}
+          type="text"
+          name="firstName"
+          value={formData.firstName}
+          onChange={handleChange}
+        />
 
-      <br />
-      <label style={{ fontFamily: "Raleway", fontSize: 18 }}>Last Name:</label>
-      <input
-        type="text"
-        name="lastName"
-        value={formData.lastName}
-        onChange={handleChange}
-      />
+        <br />
+        <label
+          style={{ fontFamily: "Raleway", fontSize: 18, display: "block" }}>
+          Last Name:
+        </label>
+        <input
+          style={{ marginBottom: "25px" }}
+          type="text"
+          name="lastName"
+          value={formData.lastName}
+          onChange={handleChange}
+        />
 
-      <br />
-      <label style={{ fontFamily: "Raleway", fontSize: 18 }}>Email:</label>
-      <input
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-      />
+        <br />
+        <label
+          style={{ fontFamily: "Raleway", fontSize: 18, display: "block" }}>
+          Email:
+        </label>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          style={{ marginBottom: "25px" }}
+        />
 
-      <br />
-      <input
-        type="submit"
-        value="Submit"
-        style={{
-          backgroundColor: "#000",
-          color: "#fff",
-          fontFamily: "Raleway",
-        }}
-      />
-      <br />
-      <br />
-      {/* Render the full name and URL string on the page */}
-      <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
-        Full Name:
-      </p>
-      <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
-        {displayData.fullName}
-      </p>
-      <br />
-      <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
-        URL String:
-      </p>
-      <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
-        {displayData.urlString}
-      </p>
+        <br />
+        <input
+          type="submit"
+          value="Submit"
+          style={{
+            backgroundColor: "#000",
+            color: "#fff",
+            fontFamily: "Raleway",
+          }}
+        />
+        <br />
+        <br />
+        {/* Render the full name and URL string on the page */}
+        <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
+          Full Name:
+        </p>
+        <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
+          {displayData.fullName}
+        </p>
+        <br />
+        <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
+          URL String:
+        </p>
+        <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
+          {displayData.urlString}
+        </p>
+      </div>
     </form>
   );
 }
