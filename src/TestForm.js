@@ -49,7 +49,7 @@ export default function TestForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ width: "50%" }}>
+    <form onSubmit={handleSubmit} style={{ width: "65%" }}>
       <label style={{ fontFamily: "Raleway", fontSize: 18 }}>First Name:</label>
       <input
         type="text"
