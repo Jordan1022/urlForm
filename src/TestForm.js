@@ -121,14 +121,13 @@ export default function TestForm() {
             }}
           />
           <br />
-          <br />
           {/* Render the full name and URL string on the page */}
-          <p style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "600" }}>
+          {/* <p style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "600" }}>
             Full Name:
           </p>
           <p style={{ fontFamily: "Raleway", fontSize: 16 }}>
             {displayData.fullName}
-          </p>
+          </p> */}
           <br />
           <p style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "600" }}>
             URL String:
