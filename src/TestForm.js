@@ -49,7 +49,7 @@ export default function TestForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ width: "65%" }}>
+    <form onSubmit={handleSubmit}>
       <div style={{ marginTop: "auto", marginBottom: "auto" }}>
         <label
           style={{
