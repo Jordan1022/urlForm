@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logoAFE.png";
 import "./App.css";
 import TestForm from "./TestForm.js";
 
@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <img src={logo} className="App-logo" />
         <TestForm />
         {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
