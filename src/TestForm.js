@@ -132,17 +132,27 @@ export default function TestForm() {
           <p style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "600" }}>
             URL String:
           </p>
-          <div
+          <a
             style={{
               fontFamily: "Raleway",
               fontSize: 16,
               width: 250,
               height: 300,
+
+              color: " #fff",
+            }}
+            href={displayData.urlString}>
+            {displayData.urlString && "Click here"}
+          </a>
+          <div
+            style={{
+              width: 200,
               whiteSpace: "nowrap",
               overflow: "hidden",
               direction: "rtl",
               textAlign: "left",
               textOverflow: "ellipsis",
+              fontSize: 14,
             }}>
             {displayData.urlString}
           </div>
