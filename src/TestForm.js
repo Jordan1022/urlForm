@@ -60,7 +60,7 @@ export default function TestForm() {
 
   return (
     <div>
-      <img src={logo} className="App-logo" />
+      <img src={logo} alt="logo" className="App-logo" />
 
       <form onSubmit={handleSubmit} style={{ marginTop: 100 }}>
         <div>
