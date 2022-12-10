@@ -77,14 +77,30 @@ export default function TestForm() {
       />
 
       <br />
-      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        value="Submit"
+        style={{
+          backgroundColor: "#000",
+          color: "#fff",
+          fontFamily: "Raleway",
+        }}
+      />
       <br />
       <br />
       {/* Render the full name and URL string on the page */}
-      <p style={{ fontFamily: "Raleway", fontSize: 20 }}>
-        Full Name: {displayData.fullName}
-        <br />
-        URL String: {displayData.urlString}
+      <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
+        Full Name:
+      </p>
+      <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
+        {displayData.fullName}
+      </p>
+      <br />
+      <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
+        URL String:
+      </p>
+      <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
+        {displayData.urlString}
       </p>
     </form>
   );
