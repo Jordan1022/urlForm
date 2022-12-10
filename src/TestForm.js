@@ -102,6 +102,9 @@ export default function TestForm() {
             backgroundColor: "#000",
             color: "#fff",
             fontFamily: "Raleway",
+            width: "150px",
+            border: "1px solid #fff",
+            height: "25px",
           }}
         />
         <br />
@@ -110,14 +113,14 @@ export default function TestForm() {
         <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
           Full Name:
         </p>
-        <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
+        <p style={{ fontFamily: "Raleway", fontSize: 16 }}>
           {displayData.fullName}
         </p>
         <br />
         <p style={{ fontFamily: "Raleway", fontSize: 20, fontWeight: "600" }}>
           URL String:
         </p>
-        <p style={{ fontFamily: "Raleway", fontSize: 18 }}>
+        <p style={{ fontFamily: "Raleway", fontSize: 16 }}>
           {displayData.urlString}
         </p>
       </div>
