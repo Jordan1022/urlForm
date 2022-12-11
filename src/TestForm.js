@@ -129,10 +129,16 @@ export default function TestForm() {
             {displayData.fullName}
           </p> */}
           <br />
-          <p style={{ fontFamily: "Raleway", fontSize: 18, fontWeight: "600" }}>
-            URL String:
+          <p
+            style={{
+              fontFamily: "Raleway",
+              fontSize: 18,
+              fontWeight: "600",
+            }}>
+            URL :{" "}
           </p>
-          <a
+          <p style={{ fontSize: 14 }}>{displayData.urlString && "Sent ✅"}</p>
+          {/* <a
             style={{
               fontFamily: "Raleway",
               fontSize: 16,
@@ -142,8 +148,8 @@ export default function TestForm() {
               color: " #fff",
             }}
             href={displayData.urlString}>
-            {displayData.urlString && "Click here"}
-          </a>
+            {displayData.urlString}
+          </a> */}
           <div
             style={{
               width: 200,
