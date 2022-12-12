@@ -137,6 +137,9 @@ export default function TestForm() {
             }}>
             URL :{" "}
           </p>
+          <p style={{ fontSize: 14 }}>
+            {!displayData.urlString && "Waiting to Send 👨‍💻"}
+          </p>
           <p style={{ fontSize: 14 }}>{displayData.urlString && "Sent ✅"}</p>
           {/* <a
             style={{
